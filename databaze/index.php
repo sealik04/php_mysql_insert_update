@@ -43,7 +43,7 @@
 
             $result = mysqli_query($connection, $sql_query);
             if(!$result){
-                die("je to v piči");
+                die("error");
             }
         }
     }
@@ -63,7 +63,7 @@
 
             $update_result = mysqli_query($connection, $update_query);
             if (!$update_result) {
-                die('Error in update query: ' . mysqli_error($connection));
+                die('error');
             }
 
         } else {
